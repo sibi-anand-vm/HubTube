@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+}
+.header-container {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+gap:220px;
+}
+
+/* Logo Image */
+.logo-image {
+    max-height: 50px;
+}
+
+/* Navigation Menu */
+.navigation-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    gap: 8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.menu-item a:hover {
+    color: #007bff;
+}
+/* Toggle Button */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    gap: 0.8rem;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* Admin and Logout Buttons */
+.admin-button, .logout-button {
+    max-height: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        justify-content: center; /* Aligns logo and toggle button on mobile */
+    }
+
+    .navigation-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(149, 148, 148, 0.95);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-item {
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu-item a {
+        font-size: 1.2rem; /* Slightly smaller font size for mobile */
+    }
+
+    .menu-active {
+        max-height: 200px; /* Adjusted to allow more space for the menu */
+    }
+
+    .toggle-button {
+        display: flex;
+        background-color: #007bff;
+    }
+
+    .admin-button, .logout-button {
+        max-height: 30px;
+        margin-top: 0.5rem;
+    }
+
+    /* Adjust logo image size on smaller screens */
+    .logo-image {
+        max-height: 40px;
+    }
+}
+
+/* Very Small Devices (Portrait Phones, Less than 480px) */
+@media (max-width: 480px) {
+    .header-container {
+        justify-content: center;
+        gap: 20px; /* Aligns logo and toggle button on mobile */
+    }
+    .menu-list {
+        gap: 1rem;
+    }
+
+    .menu-item a {
+        font-size: 1rem;
+        padding: 0.8rem 0;
+    }
+
+    .menu-active {
+        max-height: 20px; /* Adjusted for very small screens */
+    }
+
+    .admin-button, .logout-button {
+        max-height: 25px;
+    }
+.btns{
+    gap: 20px;
+}
+    .logout-button {
+        margin-left: 0; /* Remove any negative margins */
+ /* Adjust to avoid cutting off */
+    }
+    .logo-image {
+        max-height: 35px;
+    }
+}

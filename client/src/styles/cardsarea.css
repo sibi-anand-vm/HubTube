@@ -1,0 +1,161 @@
+/* Base Styles */
+.block33 h1 {
+    margin-top: 4%;
+    margin-left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: red;
+    margin-bottom: 1%;
+}
+
+.vidslides {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 1%;
+    margin-left: 0.5%;
+    align-items: start;
+    justify-content: space-around; /* Center align items horizontally */
+}
+
+.slideplaybtn {
+    margin-top: 0.5%;
+    height: 50%;
+    width: 20%;
+}
+.no-data{
+    color: #fffb23;
+    font-size: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+.watchbtn {
+    display: block; /* Make the button a block element */
+    margin: 3.5% 21%; 
+    padding: 1.5% 2.7%;
+    padding-right: 3.5%; 
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 120%;
+    align-items: flex-end; 
+}
+
+/* Styles for the card */
+.layer1 {
+    height: 260px;
+    background-color: #ffac30;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    width: 200px; /* Adjust width for better responsiveness */
+    text-align: center;
+    border: 2px solid #434141; /* Dark gray border */
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 1.5%;
+}
+
+/* Hover effect for the card */
+.layer1:hover {
+    transform: scale(1.05); 
+}
+
+.layer1 img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.layer1 h2 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.layer1 h3 {
+    font-size: 14px;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 4px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .layer1 {
+        height: 290px; 
+        width: 180px; /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .layer1 {
+        width: 160px; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .layer1 {
+        width: 150px;
+        height: max-content; /* Adjust height for mobile screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .layer1 {
+        width: 40%; /* Full width on very small screens */
+        height: 220px;
+    }
+
+    .layer1 img {
+        height: 100px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .layer1 h2 {
+        font-size: 15px;
+    }
+
+    .layer1 h3 {
+        font-size: 12px;
+    }
+
+    .watchbtn {
+        display: block; /* Make the button a block element */
+        margin: 1.5% 10%; /* Reduced margin for small screens */
+        padding: 1% 2.7%;
+        padding-right: 3.5%; 
+        background-color: red;
+        color: #fff;
+        border: none;
+        border-radius: 5%;
+        cursor: pointer;
+        font-size: 85%;
+        align-items: flex-end; 
+    }
+}
+
+/* Additional responsiveness for very small screens */
+@media (max-width: 360px) {
+    .layer1 {
+        width: 40%; /* Almost full width for very small screens */
+        height: 220px; /* Reduced height for very small screens */
+    }
+.block33 h1{
+    margin-top: 15%;
+}
+    .watchbtn {
+        display: block; /* Make the button a block element */
+        margin: 1.5% 20%; /* Reduced margin for small screens */
+        padding: 1% 2.7%;
+        padding-right: 3.5%; 
+        background-color: red;
+        color: #fff;
+        border: none;
+        border-radius: 5%;
+        cursor: pointer;
+        font-size: 85%;
+        align-items: flex-end; /* Further reduced margin for very small screens */
+    }
+}

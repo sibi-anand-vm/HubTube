@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.fullmoviespage {
+background-color: rgb(33, 29, 29);
+}
+
+.forthumb71 {
+background-image: url('https://images.hdqwalls.com/download/fast-and-furious-7-2015-2048x1152.jpg');
+background-size: cover;
+background-position: center;
+}
+
+.block72 {
+padding-top: 40px;
+padding-bottom: 400px;
+}
+
+@keyframes pulse {
+0% {
+  transform: scale(1);
+  color: lightgreen;
+}
+50% {
+  transform: scale(1.0005);
+  color: rgb(0, 118, 145);
+}
+100% {
+  transform: scale(1);
+}
+}
+
+.pulseEffect {
+animation: pulse 1.5s ease-in-out infinite;
+}
+
+.block72 h1,
+.block72 h2 {
+color: rgb(201, 146, 70);
+font-size: 70px;
+margin-left: 5%;
+font-family: 'Courier New', Courier, monospace;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+animation: pulse 1.5s ease-in-out infinite;
+}
+
+.play3btn {
+padding: 10px 20px;
+border: none;
+font-size: 25px;
+font-family: monospace;
+background-color: rgb(246, 183, 102);
+border-radius: 3px;
+margin-left: 5%;
+margin-top: 3%;
+cursor: pointer;
+transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.play3btn:hover {
+background-color: rgb(255, 106, 0);
+transform: scale(1.1);
+}
+
+.block72 h1 {
+margin-top: 4%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.block72 {
+  padding-top: 20px;
+  padding-bottom: 200px;
+}
+
+.block72 h1,
+.block72 h2 {
+  font-size: 50px;
+  margin-left: 3%;
+}
+
+.play3btn {
+  font-size: 20px;
+  padding: 8px 16px;
+  margin-left: 3%;
+}
+
+.block72 h1 {
+  margin-top: 6%;
+}
+}
+
+@media (max-width: 480px) {
+.block72 {
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+
+.block72 h1,
+.block72 h2 {
+  font-size: 30px;
+  margin-left: 2%;
+}
+
+.play3btn {
+  font-size: 18px;
+  padding: 6px 12px;
+  margin-left: 2%;
+}
+
+.block72 h1 {
+  margin-top: 50%;
+}
+}

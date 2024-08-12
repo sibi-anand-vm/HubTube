@@ -1,0 +1,45 @@
+/* Header Container */
+.head-container {
+    display: flex; /* Changed from space-around to space-between */
+    padding: 0.5rem;
+    gap: 75%;
+  /*  background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; */
+}
+
+
+
+/* Very Small Devices (Portrait Phones, Less than 480px) */
+@media (max-width: 480px) {
+    .head-container{
+        display: flex;
+        justify-content:center ;
+        gap: 150px;
+    }
+    .menu-list {
+        gap: 1rem;
+    }
+
+    .menu-item a {
+        font-size: 1rem;
+        padding: 0.8rem 0;
+    }
+
+    .menu-active {
+        max-height: 250px; /* Adjusted for very small screens */
+    }
+
+    .admin-button, .logout-button {
+        max-height: 30px;
+    }
+.btns{
+    gap: 5px;
+}
+    .logo-image {
+        max-height: 35px;
+        margin-left: 15px;
+    }
+}

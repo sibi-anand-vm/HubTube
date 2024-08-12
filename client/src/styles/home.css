@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fullhomepage {
+  background-color: rgb(33, 29, 29);
+}
+
+.forthumb {
+  background-image: url('https://wallpapercave.com/wp/wp9128185.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.block32 {
+  padding-top: 200px;
+  padding-bottom: 150px;
+  height: 410px;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      color: rgba(51, 255, 0, 0.589);
+  }
+  50% {
+      transform: scale(1.0005);
+      color: rgb(0, 255, 225);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.pulseEffect {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.block32 h1,
+.block32 h2 {
+  color: rgb(201, 146, 70);
+  font-size: 60px;
+  margin-left: 7%;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.playbtn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 25px;
+  font-family: monospace;
+  background-color: rgb(246, 183, 102);
+  border-radius: 3px;
+  margin-left: 7%;
+  margin-top: 100px;
+  transition: all 0.3s ease;
+}
+
+.playbtn:hover {
+  background-color: lightgreen;
+  transform: scale(1.1);
+}
+
+.block32 h1 {
+  margin-top: 10%;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+  .block32 h1,
+  .block32 h2 {
+      font-size: 50px;
+  }
+  .playbtn {
+      font-size: 22px;
+      margin-top: 100px;
+  }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+  .block32 h1,
+  .block32 h2 {
+      font-size: 45px;
+  }
+    .block32 h1{
+    margin-top: 27%;
+  }
+  .playbtn {
+      font-size: 20px;
+      margin-top: 80px;
+  }
+  .block32 {
+      height: 350px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .block32 h1,
+  .block32 h2 {
+      font-size: 35px;
+      margin-left: 5%;
+  }
+  .block32 h1{
+    margin-top: 15%;
+  }
+  .playbtn {
+      font-size: 18px;
+      margin-left: 5%;
+      margin-top: 60px;
+      padding: 8px 16px;
+  }
+  .block32 {
+      height: 310px;
+      padding-bottom:-20px;
+  }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+  .block32 h1,
+  .block32 h2 {
+      font-size: 28px;
+      margin-left: 5%;
+  }
+  .block32 h1{
+    margin-top: 50%;
+  }
+  .playbtn {
+      font-size: 16px;
+      margin-left: 5%;
+      margin-top: 40px;
+      padding: 6px 12px;
+  }
+  .block32 {
+      height: 310px;
+  }
+}

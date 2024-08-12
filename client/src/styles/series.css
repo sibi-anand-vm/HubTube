@@ -1,0 +1,131 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background Image for Full Series Page */
+.forthumb1 {
+  background-image: url('https://th.bing.com/th/id/R.09e4a159f2be51d69043568fb07f7f89?rik=ir3OQN08TsSG4A&riu=http%3a%2f%2fhdqwalls.com%2fdownload%2fstranger-things-season-3-2019-ni-1920x1080.jpg&ehk=rHLjt7Kbg2nc71p%2boANbvoPh5WVr2SDHQJLVTklrhAI%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Full Series Page Background Color */
+.fullseriespage {
+  background-color: rgb(33, 29, 29);
+}
+
+/* Block 52 Padding */
+.block52 {
+  padding-top: 210px;
+  padding-bottom:130px;
+ /* Center content */
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      color: lightgreen;
+  }
+  50% {
+      transform: scale(1.0005);
+      color: orangered;
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.pulseEffect {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Block 52 Headings */
+.block52 h1,
+.block52 h2 {
+  color: rgb(201, 146, 70);
+  font-size: 50px;
+  margin-left: 7%;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: pulse 1.5s ease-in-out infinite;
+  z-index: -1;
+}
+
+/* Play Button */
+.play1btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 25px;
+  font-family: monospace;
+  background-color: rgb(246, 183, 102);
+  border-radius: 3px;
+  margin-left: 7%;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.play1btn:hover {
+  background-color: lightgreen;
+  transform: scale(1.1);
+}
+
+/* Specific Margin for Block 52 H1 */
+.block52 h1 {
+  margin-top: 190px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .block52 h1,
+  .block52 h2 {
+      font-size: 50px;
+      margin-left: 5%;
+  }
+
+  .play1btn {
+      font-size: 22px;
+      margin-left: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .block52 {
+      padding-top: 150px;
+      padding-bottom: 100px;
+  }
+
+  .block52 h1,
+  .block52 h2 {
+      font-size: 40px;
+      margin-left: 3%;
+  }
+
+  .play1btn {
+      font-size: 20px;
+      margin-left: 3%;
+  }
+}
+
+@media (max-width: 480px) {
+  .block52 {
+      padding-top: 160px;
+      padding-bottom: 120px;
+  }
+
+  .block52 h1,
+  .block52 h2 {
+      font-size: 30px;
+      margin-left: 2%;
+  }
+
+  .play1btn {
+      font-size: 18px;
+      margin-left: 2%;
+      margin-top: 20px;
+  }
+}

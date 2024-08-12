@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fulladminpage{
+    display: flex;
+    height: max-content;
+}
+@media (max-width: 480px) {
+    .fulladminpage{
+        height:640px;
+    }
+}
