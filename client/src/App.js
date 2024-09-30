@@ -11,7 +11,6 @@ import Loginpage from './pages/Loginpage';
 import Myground from './pages/Myground';
 import Adminpage from './pages/Adminpage';
 import Home from './pages/Home'; 
-import ProtectedRoute from './components/ProtectedRoute';  // Import ProtectedRoute
 
 function App() {
   return (
@@ -19,33 +18,16 @@ function App() {
       <VideoProvider>
         <Router>
           <Routes>
-            <Route 
-              path="/videoscreen" 
-              element={<ProtectedRoute element={Videopage} />} 
-            />
+            {/* Removed ProtectedRoute for testing */}
+            <Route path="/videoscreen" element={<Videopage />} />
             <Route path="/login" element={<Loginpage />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/" element={<Landingpage />} />
-            <Route 
-              path="/Admindash" 
-              element={<ProtectedRoute element={Adminpage} />} 
-            />
-            <Route 
-              path="/Home" 
-              element={<ProtectedRoute element={Home} />} 
-            />
-            <Route 
-              path="/Movies" 
-              element={<ProtectedRoute element={Moviespage} />} 
-            />
-            <Route 
-              path="/Series" 
-              element={<ProtectedRoute element={Seriespage} />} 
-            />
-            <Route 
-              path="/Ground" 
-              element={<ProtectedRoute element={Myground} />} 
-            />
+            <Route path="/Admindash" element={<Adminpage />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Movies" element={<Moviespage />} />
+            <Route path="/Series" element={<Seriespage />} />
+            <Route path="/Ground" element={<Myground />} />
           </Routes>
         </Router>
       </VideoProvider>
