@@ -5,6 +5,7 @@
 .fulladminpage{
     display: flex;
     height: max-content;
+   height:100vh;
 }
 @media (max-width: 480px) {
     .fulladminpage{
