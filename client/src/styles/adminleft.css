@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-height: 720px;
+height: 100vh;
 }
 
 .profile img {
